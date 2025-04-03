@@ -1,0 +1,50 @@
+{
+  "name": "walk-excel",
+  "version": "1.0.0",
+  "description": "Util para recorer archivos excel (xlsx, xls).",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "tsup": {
+    "entry": [
+      "src/index.ts"
+    ],
+    "format": [
+      "esm",
+      "cjs"
+    ],
+    "dts": true,
+    "splitting": false,
+    "sourcemap": true,
+    "clean": true
+  },
+  "scripts": {
+    "build": "tsup",
+    "ex": "ts-node src/examples.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajorgenmarten/walk-excel.git"
+  },
+  "keywords": [
+    "excel",
+    "xlsx",
+    "xls"
+  ],
+  "author": {
+    "email": "ajorgenmarten35@gmail.com",
+    "name": "Alejandro Jorgen Martén",
+    "url": "https://cocodev.onrender.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/xlsx": "^0.0.35",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "xlsx": "^0.18.5"
+  }
+}
