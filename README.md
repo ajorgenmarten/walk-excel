@@ -26,7 +26,7 @@ import { ExcelModule } from "walk-excel";
 
 const excel = new ExcelModule();
 
-excel.walk("./data.xlsx", (row, index) => {
+excel.walkRows("./data.xlsx", (row, index) => {
   console.log("data:", row, "index:", index); // data: {...} index: 0
 });
 ```

@@ -1,6 +1,6 @@
 {
   "name": "walk-excel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Util para recorer archivos excel (xlsx, xls).",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
